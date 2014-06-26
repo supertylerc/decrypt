@@ -14,8 +14,9 @@ task :cisco do
 end
 
 desc 'Install decrypt'
-task :install, [:install_directory] => [:juniper, :cisco] do |t, args|
+task :install, [:install_directory] => [:juniper, :cisco] do |_, args|
   args.with_defaults(install_directory: "#{Dir.home}/bin")
+  Dir.mkdir args.install_directory unless Dir.exists? args.install_directory
   dest = File.join args.install_directory, 'decrypt'
   src = File.join Dir.pwd, 'decrypt.rb'
   puts "Installing `decrypt` to #{dest}..."
