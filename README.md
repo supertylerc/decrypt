@@ -32,7 +32,9 @@ you need to specify the installation directory like this:
 rake install[/home/tyler/cows]
 ```
 
-The rake task installs `decrypt` by creating a [symlink][4].
+The rake task installs `decrypt` by creating a [symlink][4].  This
+_will_ overwrite any existing file in the target directory called
+`decrypt`!
 
 Once you've done the above, simply invoke the script by typing:
 
@@ -40,29 +42,29 @@ Once you've done the above, simply invoke the script by typing:
 decrypt -t [type]
 ```
 
-[type] should be either `ios` (for Cisco Type 7 passwords )or `junos` 
+[type] should be either `ios` (for Cisco Type 7 passwords) or `junos` 
 (for `$9$` passwords).
 
 ## Examples
 
 ```bash
-╭─tchristiansen52 at us160536 in ~/bin using ‹ruby-2.1.1› 14-04-07 - 23:34:01
-╰─○ ./decrypt
+╭─tyler at deathstar in ~/bin using ‹ruby-2.1.1› 14-04-07 - 23:34:01
+╰─○ ./decrypt -t ios
 Paste hash, including leading characters, below.
 > 02320C5E280918
 
 
 Original hash: 320C5E280918
 Plain-Text   : TheCow
-╭─tchristiansen52 at us160536 in ~/bin using ‹ruby-2.1.1› 14-04-07 - 23:34:03
-╰─○ ./decrypt
+╭─tyler at us160536 in ~/bin using ‹ruby-2.1.1› 14-04-07 - 23:34:03
+╰─○ ./decrypt -t junos
 Paste hash, including leading characters, below.
 > $9$EDXheMdVYJZjqmpBEcMWdVwgJD.mT3/tevdsgJHkn/C
 
 
 Original hash: $9$EDXheMdVYJZjqmpBEcMWdVwgJD.mT3/tevdsgJHkn/C
 Plain-Text   : TheCowGoesOink
-╭─tchristiansen52 at us160536 in ~/bin using ‹ruby-2.1.1› 14-04-07 - 23:34:52
+╭─tyler at deathstar in ~/bin using ‹ruby-2.1.1› 14-04-07 - 23:34:52
 ╰─○
 ```
 
