@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 # encoding: UTF-8
+
 require 'trollop'
 require_relative 'lib/decrypt'
 

@@ -9,24 +9,43 @@ The current version of `decrypt` is `0.0.1`.
 
 ## Installation
 
-[Clone the repository][2].  Place the file somewhere in [your path][3].
-`$HOME/bin` is in my path for all local, non-system scripts.  If you're
-not already placing or [symlinking][4] your scripts to a centralized
-`bin`-type directory, I strongly encourage you to consider it.  It makes
-life easy.
+> Please read the installation details _completely_ before actually
+> installing.
 
-Once you're inside of the directory, run `bundle install` to install the
-appropriate gem(s).
+[Clone the repository][2].  Open a terminal and run the following
+commands:
+
+```bash
+cd /path/to/repo
+bundle install
+rake install
+```
+
+> This installs `decrypt` to `$HOME/bin`.  If that directory doesn't
+> exist, it creates it for you.  If it's not in [your path][3], you
+> should add it.
+
+If you want `decrypt` to be installed somewhere other than `$HOME/bin`,
+you need to specify the installation directory like this:
+
+```bash
+rake install[/home/tyler/cows]
+```
+
+The rake task installs `decrypt` by creating a [symlink][4].
 
 Once you've done the above, simply invoke the script by typing:
 
 ```
-decrypt <password>
+decrypt -t [type]
 ```
+
+[type] should be either `ios` (for Cisco Type 7 passwords )or `junos` 
+(for `$9$` passwords).
 
 ## Examples
 
-```
+```bash
 ╭─tchristiansen52 at us160536 in ~/bin using ‹ruby-2.1.1› 14-04-07 - 23:34:01
 ╰─○ ./decrypt
 Paste hash, including leading characters, below.
