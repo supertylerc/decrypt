@@ -1,0 +1,237 @@
+---
+# language: ruby
+
+tools:
+    rubocop: true
+    ruby_analyzer:
+        config:
+            metrics: true
+            duplication_detector:
+                enabled: true
+
+checks:
+    ruby:
+        style_word_array:
+            min_size: '0'
+        style_while_until_modifier:
+            max_line_length: '80'
+        style_while_until_do: true
+        style_when_then: true
+        style_variable_name:
+            enforced_style: snake_case
+        style_variable_interpolation: true
+        style_unneeded_percent_x: true
+        style_unneeded_capital_w: true
+        style_unless_else: true
+        style_trivial_accessors:
+            exact_name_match: false
+            allow_predicates: false
+            allow_d_s_l_writers: false
+        style_trailing_whitespace: true
+        style_symbol_array: true
+        style_tab: true
+        style_trailing_blank_lines:
+            enforced_style: final_newline
+        style_trailing_comma:
+            enforced_style_for_multiline: no_comma
+        style_space_inside_block_braces:
+            enforced_style: space
+            enforced_style_for_empty_braces: no_space
+            space_before_block_parameters: true
+        style_space_inside_brackets: true
+        style_space_inside_hash_literal_braces:
+            enforced_style: space
+            enforced_style_for_empty_braces: no_space
+        style_space_inside_parens: true
+        style_special_global_vars: true
+        style_string_literals:
+            enforced_style: single_quotes
+        style_single_space_before_first_arg: true
+        style_space_after_colon: true
+        style_space_after_comma: true
+        style_space_after_control_keyword: true
+        style_space_after_method_name: true
+        style_space_after_not: true
+        style_space_after_semicolon: true
+        style_space_around_equals_in_parameter_default:
+            enforced_style: space
+        style_space_around_operators: true
+        style_space_before_block_braces:
+            enforced_style: space
+        style_space_before_comment: true
+        style_space_before_modifier_keyword: true
+        style_raise_args:
+            enforced_style: exploded
+        style_redundant_begin: true
+        style_redundant_exception: true
+        style_redundant_return:
+            allow_multiple_return_values: false
+        style_redundant_self: true
+        style_regexp_literal:
+            max_slashes: '1'
+        style_rescue_modifier: true
+        style_self_assignment: true
+        style_semicolon:
+            allow_as_expression_separator: false
+        style_signal_exception:
+            enforced_style: semantic
+        style_single_line_block_params: true
+        style_single_line_methods:
+            allow_if_method_is_empty: true
+        style_nil_comparison: true
+        style_non_nil_check:
+            include_semantic_changes: false
+        style_not: true
+        style_numeric_literals:
+            min_digits: '5'
+        style_one_line_conditional: true
+        style_op_method: true
+        style_parameter_lists:
+            max: '5'
+            count_keyword_args: true
+        style_parentheses_around_condition:
+            allow_safe_assignment: true
+        style_percent_literal_delimiters: true
+        style_perl_backrefs: true
+        style_predicate_name: true
+        style_proc: true
+        style_method_called_on_do_end_block: true
+        style_method_def_parentheses:
+            enforced_style: require_parentheses
+        style_method_length:
+            count_comments: false
+            max: '10'
+        style_method_name:
+            enforced_style: snake_case
+        style_module_function: true
+        style_multiline_block_chain: true
+        style_multiline_if_then: true
+        style_multiline_ternary_operator: true
+        style_negated_if: true
+        style_negated_while: true
+        style_nested_ternary_operator: true
+        style_next:
+            enforced_style: skip_modifier_ifs
+        style_if_unless_modifier:
+            max_line_length: '80'
+        style_if_with_semicolon: true
+        style_indent_array: true
+        style_indent_hash:
+            enforced_style: special_inside_parentheses
+        style_indentation_width: true
+        style_lambda: true
+        style_line_end_concatenation: true
+        style_line_length:
+            max: '80'
+        style_method_call_parentheses: true
+        style_empty_lines_around_body: true
+        style_empty_literal: true
+        style_encoding:
+            enforced_style: always
+        style_end_block: true
+        style_end_of_line: true
+        style_even_odd: true
+        style_file_name: true
+        style_flip_flop: true
+        style_for:
+            enforced_style: each
+        style_format_string:
+            enforced_style: format
+        style_global_vars: true
+        style_guard_clause:
+            min_body_length: '1'
+        style_hash_syntax:
+            enforced_style: ruby19
+        style_comment_annotation: true
+        style_comment_indentation: true
+        style_constant_name: true
+        style_cyclomatic_complexity:
+            max: '6'
+        style_def_with_parentheses: true
+        style_deprecated_hash_methods: true
+        style_dot_position:
+            enforced_style: leading
+        style_double_negation: true
+        style_each_with_object: true
+        style_empty_line_between_defs:
+            allow_adjacent_one_line_defs: false
+        style_empty_lines: true
+        style_empty_lines_around_access_modifier: true
+        style_block_nesting:
+            max: '3'
+        style_blocks: true
+        style_braces_around_hash_parameters:
+            enforced_style: no_braces
+        style_case_equality: true
+        style_case_indentation:
+            indent_when_relative_to: case
+            indent_one_step: false
+        style_character_literal: true
+        style_class_and_module_camel_case: true
+        style_class_and_module_children:
+            enforced_style: nested
+        style_class_methods: true
+        style_class_vars: true
+        style_collection_methods: true
+        style_colon_method_call: true
+        style_access_modifier_indentation:
+            enforced_style: indent
+        style_accessor_method_name: true
+        style_alias: true
+        style_align_array: true
+        style_align_hash: true
+        style_align_parameters:
+            enforced_style: with_first_parameter
+        style_and_or: true
+        style_array_join: true
+        style_attr: true
+        style_begin_block: true
+        style_block_comments: true
+        lint_useless_assignment: true
+        lint_useless_comparison: true
+        lint_useless_else_without_rescue: true
+        lint_useless_setter_call: true
+        lint_void: true
+        rails_action_filter:
+            enforced_style: action
+        rails_default_scope: true
+        rails_delegate: true
+        rails_has_and_belongs_to_many: true
+        rails_output: true
+        rails_read_write_attribute: true
+        rails_scope_args: true
+        rails_validation: true
+        lint_literal_in_interpolation: true
+        lint_loop: true
+        lint_parentheses_as_grouped_expression: true
+        lint_require_parentheses: true
+        lint_rescue_exception: true
+        lint_shadowing_outer_local_variable: true
+        lint_space_before_first_arg: true
+        lint_string_conversion_in_interpolation: true
+        lint_underscore_prefixed_variable_name: true
+        lint_unreachable_code: true
+        lint_unused_block_argument: true
+        lint_unused_method_argument: true
+        lint_useless_access_modifier: true
+        lint_condition_position: true
+        lint_debugger: true
+        lint_deprecated_class_methods: true
+        lint_else_layout: true
+        lint_empty_ensure: true
+        lint_empty_interpolation: true
+        lint_end_alignment:
+            align_with: keyword
+        lint_end_in_method: true
+        lint_ensure_return: true
+        lint_eval: true
+        lint_handle_exceptions: true
+        lint_invalid_character_literal: true
+        lint_literal_in_condition: true
+        code_rating: true
+        duplicate_code: true
+        lint_ambiguous_operator: true
+        lint_ambiguous_regexp_literal: true
+        lint_assignment_in_condition:
+            allow_safe_assignment: true
+        lint_block_alignment: true

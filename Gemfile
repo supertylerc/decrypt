@@ -1,2 +1,5 @@
 source 'https://rubygems.org'
 gem 'router_crypt', '~> 0.3.1'
+gem 'rake'
+gem 'minitest'
+gem 'trollop'

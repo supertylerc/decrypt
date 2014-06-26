@@ -1,4 +1,4 @@
-# decrypt
+# decrypt [![Build Status](https://travis-ci.org/supertylerc/decrypt.svg?branch=master)](https://travis-ci.org/supertylerc/decrypt) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/supertylerc/decrypt/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/supertylerc/decrypt/?branch=master)
 
 `decrypt` is a [Ruby][1] script for converting a given hashed password
 to its plain-text equivalent.
@@ -55,18 +55,7 @@ href="mailto:tyler@oss-stack.io?GitHub - decrypt">via e-mail</a>,
 
 ## License
 
-`decrypt` is released under the Sentinel License v1, a [free and open
-source][7] license based on the [BSD 2-Clause License][8].  The Sentinel
-License v1 enforces a more open culture than other licenses (such as the
-[GPL][9]) without the ridiculous length that those licenses typically
-maintain.
-
-See the [LICENSE][10] file for more details.
-
-> It is debatable whether the Sentinel License v1 is truly an open
-> source license, primarily due to points 4 and 10 of the [Open Source
-> Definition][7].  This is actively under review and a new version of
-> the license will be released with appropriate wording if necessary.
+`decrypt` is released under [BSD 2-Clause License][8]. See the [LICENSE][10] file for more details.
 
 [1]: https://www.ruby-lang.org/en/ "Ruby Language Home"
 [2]: http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository#Cloning-an-Existing-Repository "Clone an Existing Repository"
@@ -74,7 +63,5 @@ See the [LICENSE][10] file for more details.
 [4]: http://gigaom.com/2011/04/27/how-to-create-and-use-symlinks-on-a-mac/ "Symlinking for Mac Users"
 [5]: https://twitter.com/oss_stack "Tyler Christiansen's Twitter"
 [6]: http://oss-stack.io/ "The Operations Supporting Systems Stack"
-[7]: http://opensource.org/osd "Open Source Definition"
 [8]: http://opensource.org/licenses/BSD-2-Clause "BSD 2-Clause Definition"
-[9]: http://opensource.org/licenses/gpl-license "GPL Licenses"
-[10]: LICENSE "Sentinel License v1"
+[10]: LICENSE "BSD 2-Clause License"
