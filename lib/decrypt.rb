@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-
+# encoding: UTF-8
 require 'router_crypt'
 class Decrypt
   attr_reader :plain_text_password

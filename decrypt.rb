@@ -4,7 +4,7 @@ require 'trollop'
 require_relative 'lib/decrypt'
 
 opts = Trollop.options do
-    opt :type, '`ios` or `junos`.', type: :string
+  opt :type, '`ios` or `junos`.', type: :string
 end
 
 abort 'Must specify type.  Type must be `ios` or `junos`.' unless opts[:type]
